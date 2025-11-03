@@ -394,25 +394,7 @@ HTML = """
         {% endif %}
     </div>
 
-    {% if logged_in %}
-    <script>
-        // Auto refresh every 5 seconds
-        setTimeout(function() {
-            location.reload();
-        }, 5000);
-        
-        // Auto scroll to bottom of chat
-        window.onload = function() {
-            var logContainer = document.querySelector('.log-container');
-            if (logContainer) {
-                logContainer.scrollTop = logContainer.scrollHeight;
-            }
-        };
-    </script>
-    {% endif %}
-</body>
-</html>
-"""
+  
 
 def cls():
     os.system('clear')
